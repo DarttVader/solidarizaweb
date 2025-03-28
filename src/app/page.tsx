@@ -1,9 +1,9 @@
-import { NavBar } from "@/exports";
+import { SectionCards } from "@/exports";
 
 const Home = () => {
   return (
     <main>
-      <NavBar />
+      <SectionCards />
     </main>
   );
 };

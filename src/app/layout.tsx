@@ -1,15 +1,13 @@
+import { NavBar } from "@/exports";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Prata } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const FontPrata = Prata({
+  weight: "400",
+  style: "normal",
+  variable: "--prata",
+  subsets: ["latin", "cyrillic", "cyrillic-ext", "vietnamese"],
 });
 
 export const metadata: Metadata = {
@@ -20,8 +18,9 @@ export const metadata: Metadata = {
 const RootLayout = ({ children, }: Readonly<{ children: React.ReactNode; }>) => {
   return (
     <html lang="pt-BR">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${FontPrata.variable}`}>
         {children}
+        <NavBar />
       </body>
     </html>
   );
