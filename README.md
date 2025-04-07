@@ -22,6 +22,14 @@ bun dev
 
 #### Este projeto usa [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) para otimizar e carregar automaticamente [Geist](https://vercel.com/font), uma nova família de fontes para Vercel.
 
+## Configurar contentful
+
+#### Criar arquivo `.env` na raíz do projeto e dentro dele:
+
+#### `CONTENTFUL_SPACE_ID="id_space"`
+
+#### `CONTENTFUL_ACCESS_TOKEN="access_token"`
+
 ## Para saber mais sobre Next.js, dê uma olhada nos seguintes recursos:
 
 #### - [Documentação Next.js](https://nextjs.org/docs) - saiba mais sobre os recursos e API do Next.js.
