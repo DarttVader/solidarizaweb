@@ -6,7 +6,7 @@ interface MenuIconProps {
 }
 
 const MenuIcon = ({ isOpen, toggleMenu }: MenuIconProps) => (
-  <button onClick={toggleMenu} className="text-red-1 md:hidden">
+  <button onClick={toggleMenu} className="text-red-500 md:hidden">
     {isOpen ? <IoIosClose size={28} /> : <IoIosMenu size={28} />}
   </button>
 );

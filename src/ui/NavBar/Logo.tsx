@@ -1,8 +1,13 @@
 import Link from "next/link";
+interface LogoProps {
+  fontSize?: string;
+  fontType?: string;
+  textColor?: string;
+};
 
-const Logo = () => (
+const Logo: React.FC<LogoProps> = ({ textColor = "white", fontSize = "xl", fontType = "normal" }) => (
   <Link href="/">
-    <span className="text-red-1 text-xl font-prata cursor-pointer">
+    <span className={`text-${textColor} text-${fontSize} font-${fontType} font-prata cursor-pointer`}>
       Solidariza
     </span>
   </Link>

@@ -1,6 +1,45 @@
 @import "tailwindcss";
 
+/* Personalização de scrollbars para navegadores Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 20px; /* Largura da barra de rolagem vertical */
+  height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor da trilha da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff4136; /* Cor do polegar da barra de rolagem */
+  border-radius: 10px; /* Bordas arredondadas do polegar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #82181a;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #ff4136; /* Cor dos botões de rolagem (se houver) */
+}
+
+::-webkit-scrollbar-corner {
+  background: #f1f1f1; /* Cor do canto onde as barras de rolagem se encontram */
+}
+
+::-webkit-resizer {
+  background-color: #ff4136; /* Cor do redimensionador de elementos com barras de rolagem */
+}
+
+/* Personalização de scrollbars para Firefox */
+* {
+  scrollbar-width: thin; /* Define a largura da barra de rolagem (thin ou auto) */
+  scrollbar-color: #ff4136 #f1f1f1; /* Cor do polegar e da trilha (polegar, trilha) */
+}
+
 @theme {
   --font-prata: "Prata";
-  --color-red-1: #ff6056;
+  --font-lato: "Lato";
+  --color-red-1: #ff4136;
+  --background-image-fundo: url(/fundo.svg);
 }

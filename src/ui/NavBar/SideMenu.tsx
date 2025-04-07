@@ -8,7 +8,7 @@ interface SideMenuProps {
 
 const SideMenu = ({ isOpen, closeMenu }: SideMenuProps) => (
   <div
-    className={`fixed top-0 left-0 h-screen w-2/3 bg-red-1 text-white transform ${isOpen ? "translate-x-0" : "-translate-x-full"
+    className={`fixed top-0 left-0 h-screen w-2/3 bg-red-500 text-white transform ${isOpen ? "translate-x-0" : "-translate-x-full"
       } transition-transform duration-300 ease-in-out md:hidden shadow-lg`}
   >
     <button onClick={closeMenu} className="p-4">
