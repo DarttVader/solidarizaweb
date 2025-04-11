@@ -1,2 +1,2 @@
-export { CopyRight, NavBar, SectionMain } from "@/components/@components";
+export { CopyRight, NavBar, SectionMain } from "@/components/components";
 

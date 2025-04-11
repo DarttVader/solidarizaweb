@@ -20,14 +20,14 @@ const FontPoppins = Lato({
 })
 
 export const metadata: Metadata = {
-  title: "Solidariza WebSite",
+  title: "Solidariza | Website",
   description: "Criado por Fábio Ghizoni, Glawck Henrique, Ryan Alves, Mateus Cristiano e Mateus Augusto",
 };
 
 const RootLayout = ({ children, }: Readonly<{ children: React.ReactNode; }>) => {
   return (
     <html lang="pt-BR" className="antialiased">
-      <body className={`${FontPrata.variable} ${FontPoppins.variable}`}>
+      <body className={`${FontPrata.variable} ${FontPoppins.variable} flex flex-col min-h-screen`}>
         <NavBar />
         {children}
         <CopyRight />

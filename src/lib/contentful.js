@@ -1,6 +1,6 @@
 import { createClient } from "contentful";
 
-export const client = createClient({
+export const clientContentful = createClient({
   space: env("CONTENTFUL_SPACE_ID"),
   accessToken: env("CONTENTFUL_ACCESS_TOKEN"),
 });

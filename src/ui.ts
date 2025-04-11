@@ -6,5 +6,6 @@ export {
   Line,
   List,
   AnimatedCards,
-  NavigationButton
-} from "@/ui/@ui";
+  NavigationButton,
+  QrCode
+} from "@/ui/ui";

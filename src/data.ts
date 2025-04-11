@@ -1,1 +1,1 @@
-export { cards } from "@/data/@data";
+export { cards } from "@/data/data";
