@@ -27,7 +27,8 @@ export const metadata: Metadata = {
 const RootLayout = ({ children, }: Readonly<{ children: React.ReactNode; }>) => {
   return (
     <html lang="pt-BR" className="antialiased">
-      <body className={`${FontPrata.variable} ${FontPoppins.variable} flex flex-col min-h-screen`}>
+      <body className={`${FontPrata.variable} ${FontPoppins.variable} flex flex-col min-w-full min-h-screen
+        justify-between`}>
         <NavBar />
         {children}
         <CopyRight />

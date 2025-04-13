@@ -26,6 +26,8 @@ bun dev
 
 #### Criar arquivo `.env` na raíz do projeto e dentro dele:
 
+#### `DATABASE_URL=databaseurl`
+
 #### `CONTENTFUL_SPACE_ID="id_space"`
 
 #### `CONTENTFUL_ACCESS_TOKEN="access_token"`

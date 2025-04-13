@@ -1,15 +1,16 @@
 import Link from "next/link";
 interface LogoProps {
-  fontSize?: string;
+  href?: string;
   fontType?: string;
   textColor?: string;
 };
 
-const Logo: React.FC<LogoProps> = ({ textColor = "white", fontSize = "xl", fontType = "normal" }) => (
-  <Link href="/">
-    <span className={`text-${textColor} text-${fontSize} font-${fontType} font-prata cursor-pointer`}>
+const Logo: React.FC<LogoProps> = ({ href = "/", textColor = "white", fontType }) => (
+  <Link href={href} className="group">
+    <h2 className={`text-${textColor} text-2xl ${fontType} font-prata cursor-pointer mt-1
+      group-hover:opacity-75`}>
       Solidariza
-    </span>
+    </h2>
   </Link>
 );
 

@@ -15,7 +15,7 @@ const CopyRight = () => {
         <div className="flex items-center">
           <div className="flex flex-col text-xl cursor-pointer font-semibold items-center">
             <span className="pt-2 mx-1 inline-flex">
-              👴<Logo fontSize="2xl" fontType="medium" />🧓
+              👴<Logo fontType="font-medium" />🧓
             </span>
             <div className="bg-white p-2 rounded-sm">
               <Image src={UnivaleLogo} alt="Logo Univale" />

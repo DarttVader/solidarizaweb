@@ -1,11 +1,7 @@
 export {
-  Logo,
-  MenuIcon,
-  SideMenu,
-  SocialIcons,
-  Line,
-  List,
   AnimatedCards,
-  NavigationButton,
-  QrCode
+  FloatingCards, Line,
+  List, Logo, MenuIcon, NavigationButton, QrCode, SideMenu,
+  SocialIcons, TextFloatingCards
 } from "@/ui/ui";
+

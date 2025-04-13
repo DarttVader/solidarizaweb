@@ -9,14 +9,14 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="bg-white p-4 fixed w-full top-0 shadow-md z-1">
+    <nav className="bg-white p-4 fixed w-full top-0 shadow-md z-50">
+      <SideMenu isOpen={isOpen} closeMenu={closeMenu} />
       <div className="flex justify-between items-center max-w-4xl mx-auto">
         <MenuIcon isOpen={isOpen} toggleMenu={toggleMenu} />
         <Logo textColor="red-500" />
         <List />
-        <SocialIcons />
+        <SocialIcons hoverA />
       </div>
-      <SideMenu isOpen={isOpen} closeMenu={closeMenu} />
     </nav>
   );
 };

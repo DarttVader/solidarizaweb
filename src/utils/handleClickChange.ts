@@ -5,9 +5,5 @@ export const handleClickChange = (
   direction: "next" | "prev",
   length: number,
 ) => {
-  console.log(`
-    handleClickChange length: ${length}, 
-    direction: ${direction}, 
-    setActiveIndex: ${setActiveIndex}`);
   handleArrowClick(direction, setActiveIndex, length);
 };

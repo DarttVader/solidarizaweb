@@ -6,14 +6,8 @@ export const handleArrowClick = (
 ) => {
   setActiveIndex((prevIndex) => {
     if (direction === "next") {
-      console.log(`handleArrowClick prevIndex next: ${prevIndex}`);
-      console.log(`handleArrowClick length next: ${length}`);
-      console.log(`(${prevIndex} + ${1}) % ${length}`);
       return (prevIndex + 1) % length;
     } else {
-      console.log(`handleArrowClick prevIndex prev: ${prevIndex}`);
-      console.log(`handleArrowClick length prev: ${length}`);
-      console.log(`(${prevIndex} - ${1} + ${length}) % ${length}`);
       return (prevIndex - 1 + length) % length;
     }
   });

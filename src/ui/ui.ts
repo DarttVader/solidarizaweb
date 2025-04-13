@@ -7,3 +7,5 @@ export { default as SocialIcons } from "./SocialIcons";
 export { default as AnimatedCards } from "./AnimatedCards";
 export { default as NavigationButton } from "./NavigationButton";
 export { default as QrCode } from "./QrCode";
+export { default as FloatingCards } from "./FloatingCards";
+export { default as TextFloatingCards } from "./TextFloatingCards";
