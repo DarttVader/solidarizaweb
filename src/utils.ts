@@ -1,1 +1,1 @@
-export { handleArrowClick, handleClickChange } from "@/utils/utils";
+export { handleClickChange } from "@/utils/utils";

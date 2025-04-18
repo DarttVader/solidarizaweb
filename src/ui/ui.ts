@@ -9,3 +9,5 @@ export { default as NavigationButton } from "./NavigationButton";
 export { default as QrCode } from "./QrCode";
 export { default as FloatingCards } from "./FloatingCards";
 export { default as TextFloatingCards } from "./TextFloatingCards";
+export { default as PaginationButtons } from "./PaginationButtons";
+export { default as RecipeCard } from "./RecipeCard";

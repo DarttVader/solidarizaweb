@@ -1,9 +1,13 @@
-import { handleArrowClick } from "./handleArrowClick";
-
 export const handleClickChange = (
   setActiveIndex: React.Dispatch<React.SetStateAction<number>>,
   direction: "next" | "prev",
   length: number,
 ) => {
-  handleArrowClick(direction, setActiveIndex, length);
+  setActiveIndex((prevIndex) => {
+    if (direction === "next") {
+      return (prevIndex + 1) % length;
+    } else {
+      return (prevIndex - 1 + length) % length;
+    }
+  });
 };
